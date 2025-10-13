@@ -1,0 +1,22 @@
+<h1>ログイン</h1>
+<link rel="stylesheet" href="{{ asset('css/common.css') }}">
+
+<form action="{{ route('login') }}" method="POST">
+    @csrf
+    <div>
+        <p>ユーザー名</p>
+        <input type="text" name="username" placeholder="Username" value="{{ old('username') }}">
+    </div>
+    <div>
+        <p>パスワード</p>
+        <input type="password" name="password" placeholder="Password">
+    </div>
+    <br>
+    <button type="submit">ログイン</button>
+</form>
+
+@if ($errors->any())
+    <p style="color:red;">{{ $errors->first() }}</p>
+@endif
+
+<p>アカウントを持っていない場合は <a href="/register">こちら</a></p>
