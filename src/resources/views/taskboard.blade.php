@@ -40,7 +40,7 @@
             <th>タスク名</th>
             <th>登録日</th>
             <th>締切日</th>
-            <th>メモ</th>
+            <th>備考</th>
             <th>削除</th>
         </tr>
         @foreach($tasks as $task)

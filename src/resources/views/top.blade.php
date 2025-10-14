@@ -8,6 +8,6 @@
 </form>
 <br>
 <form action="register" method="GET">
-  <button type="submit">登録</button>
+  <button type="submit">アカウント作成</button>
 </form>
 

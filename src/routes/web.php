@@ -5,14 +5,14 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TaskController;
 use Illuminate\Support\Facades\Auth;
 
-// ✅ ログイン必須ルート群
+// ログイン必須ルート群
 Route::middleware('auth')->group(function () {
     Route::get('/taskboard', [TaskController::class, 'index'])->name('taskboard');
     Route::post('/taskboard', [TaskController::class, 'store'])->name('tasks.store');
     Route::delete('/taskboard/{task}', [TaskController::class, 'destroy'])->name('tasks.destroy');
 });
 
-// ✅ ログイン・登録フォーム
+// ログイン・登録フォーム
 Route::get('/top', function() {
     return view('top');
 });
@@ -27,7 +27,7 @@ Route::get('/register', function() {
 Route::post('/register', [UserController::class, 'register']);
 
 
-// ✅ ログアウト
+// ログアウト
 Route::post('/logout', function() {
     Auth::logout();
     return redirect('/login');
