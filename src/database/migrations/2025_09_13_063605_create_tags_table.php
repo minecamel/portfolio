@@ -4,23 +4,16 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-return new class extends Migration
-{
-    /**
-     * Run the migrations.
-     */
+return new class extends Migration {
     public function up(): void
     {
         Schema::create('tags', function (Blueprint $table) {
-            $table->id('id'); // タグID
-            $table->string('tag_name'); // タグ名
+            $table->id();                // タグID
+            $table->string('name')->unique(); // タグ名（重複禁止）
             $table->timestamps();
         });
     }
 
-    /**
-     * Reverse the migrations.
-     */
     public function down(): void
     {
         Schema::dropIfExists('tags');
