@@ -1,5 +1,13 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ログイン</title>
+    <link rel="stylesheet" href="{{ asset('css/common.css') }}">
+
+</head>
+
 <h1>ログイン</h1>
-<link rel="stylesheet" href="{{ asset('css/common.css') }}">
 
 <form action="{{ route('login') }}" method="POST">
     @csrf

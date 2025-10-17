@@ -1,7 +1,13 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>タスク管理アプリ</title>
+    <link rel="stylesheet" href="{{ asset('css/common.css') }}">
+
+</head>
+
 <h1>タスク管理アプリ</h1>
-
-<link rel="stylesheet" href="{{ asset('css/common.css') }}">
-
 
 <form action="login" method="GET">
   <button type="submit">ログイン</button>

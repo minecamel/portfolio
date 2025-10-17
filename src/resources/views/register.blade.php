@@ -1,6 +1,13 @@
-<h1>アカウント作成</h1>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>アカウント作成</title>
+    <link rel="stylesheet" href="{{ asset('css/common.css') }}">
 
-<link rel="stylesheet" href="{{ asset('css/common.css') }}">
+</head>
+
+<h1>アカウント作成</h1>
 
 @if($errors->any())
     <ul style="color:red;">
