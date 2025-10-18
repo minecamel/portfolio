@@ -36,7 +36,7 @@ Docker環境を構築し、Laravelを用いて開発を進めることで、デ�
 
 5. **UI・UXの工夫**  
    タスク一覧画面ではテーブル表示で締め切り日や備考を見やすく整理しました。  
-   ユーザーが直感的に操作できるよう画面構成をシンプルにしています。
+   ユーザーが直感的に操作できるように画面構成をシンプルにしています。
 
 ## 概要
 - ユーザー登録・ログイン機能  
@@ -47,6 +47,11 @@ Docker環境を構築し、Laravelを用いて開発を進めることで、デ�
 
 ## 画面イメージ（ScreenShot）
 
+<p align="center">
+  <img src="./src/images/top.png" alt="トップ画面" width="400"><br>
+  <sub>トップ画面</sub>
+</p>
+<br>
 <p align="center">
   <img src="./src/images/login.png" alt="ログイン画面" width="400"><br>
   <sub>ログイン画面</sub>
