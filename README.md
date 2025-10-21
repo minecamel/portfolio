@@ -99,7 +99,7 @@ Docker環境を構築し、Laravelを用いて開発を進めることで、デ�
 ---
 
 ## 使用技術
-- **バックエンド**：Laravel (PHP)  
+- **バックエンド**：PHP (Laravel)
 - **フロントエンド**：HTML / CSS / JavaScript  
 - **データベース**：MySQL  
 - **環境**： Docker
